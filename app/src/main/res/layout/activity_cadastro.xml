@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.CadastroActivity">
+
+    <LinearLayout
+        android:id="@+id/body"
+        style="@style/layout"
+        android:background="@color/background">
+
+        <TextView
+          style="@style/titulo"
+            android:text="@string/cadastro"
+           />
+
+        <EditText
+            android:id="@+id/nome_et"
+            style="@style/input_padrao"
+            android:background="@drawable/custom_input"
+            android:hint="@string/nome" />
+        <EditText
+            android:id="@+id/email_et"
+            style="@style/input_padrao"
+            android:background="@drawable/custom_input"
+            android:hint="@string/email" />
+
+        <EditText
+            android:id="@+id/senha_et"
+            style="@style/input_padrao"
+            android:background="@drawable/custom_input"
+            android:hint="@string/senha" />
+        <EditText
+            android:id="@+id/telefone_et"
+            style="@style/input_padrao"
+            android:background="@drawable/custom_input"
+            android:hint="@string/telefone" />
+
+        <Button
+            android:id="@+id/logar_bt"
+            style="@style/botao_padrao"
+            android:onClick="novoContato"
+            android:text="@string/cadastrar"
+            app:backgroundTint="@color/verde02" />
+        <Button
+            android:id="@+id/listar_bt"
+            style="@style/botao_padrao"
+            android:onClick="listaDeContato"
+            android:text="Lista de contatos"
+            app:backgroundTint="@color/azul02" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

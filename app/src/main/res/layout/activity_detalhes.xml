@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.DetalhesActivity"
+    android:id="@+id/body"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <TableLayout
+        android:layout_marginLeft="10dp"
+        android:id="@+id/registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/titulo">
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Informações do Contato"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </TableRow>
+        <TableRow>
+       <ImageView
+           android:layout_marginTop="20dp"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:onClick="voltar"
+           android:src="@drawable/previous"
+           />
+    </TableRow>
+        <TableRow
+            android:layout_margin="20dp"
+            android:gravity="center">
+
+            <ImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/contato" />
+        </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/nomeContato"
+           style="@style/rowDetalhesTitulos"
+            android:text="@string/nome"
+           />
+        <TextView
+            android:id="@+id/valueNome"
+            style="@style/rowDetalhesValores"
+            android:text=""
+
+             />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/emailContato"
+            android:text="@string/email"
+            style="@style/rowDetalhesTitulos" />
+        <TextView
+            android:id="@+id/valueEmail"
+            android:text=""
+            style="@style/rowDetalhesValores"
+             />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/senhaContato"
+            android:text="@string/senha"
+            style="@style/rowDetalhesTitulos"/>
+        <TextView
+            android:id="@+id/valueSenha"
+            android:text=""
+            style="@style/rowDetalhesValores"
+             />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/telefoneContato"
+            android:text="@string/telefone"
+            style="@style/rowDetalhesTitulos"/>
+        <TextView
+            android:id="@+id/valueTelefone"
+            android:text=""
+            style="@style/rowDetalhesValores"
+             />
+    </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AGENDA</string>
+
+    <string name="login">Login</string>
+    <string name="logar">Logar</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="cadastro">Cadastro de contato</string>
+    <string name="nome">Nome</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="telefone">Telefone</string>
+    <string name="cadastrar_se">cadastrar-se</string>
+    <string name="sucesso_cad">Cadastrado com sucesso</string>
+</resources>
