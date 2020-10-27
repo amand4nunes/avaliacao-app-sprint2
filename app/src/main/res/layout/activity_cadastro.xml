@@ -24,16 +24,19 @@
         <EditText
             android:id="@+id/email_et"
             style="@style/input_padrao"
+            android:inputType="textEmailAddress"
             android:background="@drawable/custom_input"
             android:hint="@string/email" />
 
         <EditText
             android:id="@+id/senha_et"
+            android:inputType="textPassword"
             style="@style/input_padrao"
             android:background="@drawable/custom_input"
             android:hint="@string/senha" />
         <EditText
             android:id="@+id/telefone_et"
+            android:inputType="phone"
             style="@style/input_padrao"
             android:background="@drawable/custom_input"
             android:hint="@string/telefone" />
